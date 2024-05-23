@@ -26,9 +26,7 @@ app.use(
 app.use(passport.initialize())
 app.use(passport.session())
 
-mongoose.connect(
-    "mongodb+srv://sibi:arunsibi@hospital-systems.wgqwd8m.mongodb.net/HMS-DB?retryWrites=true&w=majority&appName=hospital-systems"
-)
+
 
 const userSchema = new mongoose.Schema({
     email : String,
